@@ -117,15 +117,20 @@ collections:
 
   - name: "team"
     label: "Team"
-    folder: "_data/team"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Role category", name: "role", widget: "select", options: ["Group Leader", "Project Manager", "Postdocs", "PhD students", "Master Students", "Undergrad students", "Former members"] }
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - { label: "Bio (PT)", name: "bio_pt", widget: "text" }
-      - { label: "Bio (EN)", name: "bio_en", widget: "text" }
-      - { label: "Photo", name: "photo", widget: "image", required: false }
-      - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
-      - { label: "Order within role (lower first)", name: "order", widget: "number", default: 1, value_type: "int", min: 1 }
+    files:
+      - label: "Team members"
+        name: "team_members"
+        file: "_data/team.yml"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role category", name: "role", widget: "select", options: ["Group Leader", "Project Manager", "Postdocs", "PhD students", "Master Students", "Undergrad students", "Former members"] }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Bio (PT)", name: "bio_pt", widget: "text" }
+              - { label: "Bio (EN)", name: "bio_en", widget: "text" }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+              - { label: "Order within role (lower first)", name: "order", widget: "number", default: 1, value_type: "int", min: 1 }
