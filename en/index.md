@@ -1,4 +1,3 @@
-# Home (EN)
 ---
 layout: default
 title: Home

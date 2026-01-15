@@ -1,4 +1,3 @@
-# Home (PT)
 ---
 layout: default
 title: Início
