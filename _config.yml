@@ -1,1 +1,18 @@
-title: Arboviral Research Group
+title: Research Group on Arboviral Diseases
+description: Research Group on Arboviral Diseases – UFMG
+markdown: kramdown
+
+# Important for GitHub Pages project sites vs user sites:
+# If your site is https://USERNAME.github.io/REPO then baseurl should be "/REPO"
+# If your site is https://USERNAME.github.io then baseurl should be ""
+baseurl: ""
+
+permalink: pretty
+
+collections:
+  news_pt:
+    output: true
+    permalink: /pt/news/:name/
+  news_en:
+    output: true
+    permalink: /en/news/:name/
