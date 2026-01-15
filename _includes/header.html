@@ -1,30 +1,32 @@
 <header class="site-header">
-  <div class="header-top">
-    <a class="brand" href="{{ site.baseurl }}/{{ page.lang_root }}/">
-      <img class="logo" src="{{ site.baseurl }}/assets/images/logo.jpg" alt="Federal University of Minas Gerais logo">
-      <div class="brand-text">
-        <div class="brand-title">{{ site.title }}</div>
-        <div class="brand-subtitle">Department of Morphology · ICB · UFMG</div>
-      </div>
-    </a>
-
-    <div class="header-utils">
-      <a class="lang" href="{{ site.baseurl }}{{ page.lang_switch }}" aria-label="Switch language">
-        {{ page.lang_switch_label }}
+  <div class="container">
+    <div class="header-top">
+      <a class="brand" href="{{ site.baseurl }}/{{ page.lang_root }}/">
+        <img class="logo" src="{{ site.baseurl }}/assets/images/logo.jpg" alt="Federal University of Minas Gerais logo">
+        <div class="brand-text">
+          <div class="brand-title">{{ site.title }}</div>
+          <div class="brand-subtitle">Department of Morphology · ICB · UFMG</div>
+        </div>
       </a>
-      <a class="icon" href="#" aria-label="LinkedIn (placeholder)">in</a>
-      <a class="icon" href="{{ site.baseurl }}/{{ page.lang_root }}/search/" aria-label="Search">⌕</a>
-    </div>
-  </div>
 
-  <section class="banner" aria-label="Featured images">
-    <div class="banner-frame">
-      <img id="banner-img" src="{{ site.baseurl }}/assets/images/banner/banner1.jpg" alt="" />
+      <div class="header-utils">
+        <a class="lang" href="{{ site.baseurl }}{{ page.lang_switch }}" aria-label="Switch language">
+          {{ page.lang_switch_label }}
+        </a>
+        <a class="icon" href="#" aria-label="LinkedIn (placeholder)">in</a>
+        <a class="icon" href="{{ site.baseurl }}/{{ page.lang_root }}/search/" aria-label="Search">⌕</a>
+      </div>
     </div>
-    <div class="banner-controls">
-      <button type="button" id="banner-prev">Prev</button>
-      <button type="button" id="banner-toggle">Pause</button>
-      <button type="button" id="banner-next">Next</button>
-    </div>
-  </section>
+
+    <section class="banner" aria-label="Featured images">
+      <div class="banner-frame">
+        <img id="banner-img" src="{{ site.baseurl }}/assets/images/banner/banner1.jpg" alt="" />
+      </div>
+      <div class="banner-controls">
+        <button type="button" id="banner-prev">Prev</button>
+        <button type="button" id="banner-toggle">Pause</button>
+        <button type="button" id="banner-next">Next</button>
+      </div>
+    </section>
+  </div>
 </header>
