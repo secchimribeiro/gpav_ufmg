@@ -8,11 +8,15 @@ lang_switch_label: PT
 ---
 
 {% assign role_order = "Group Leader|Project Manager|Postdocs|PhD students|Master Students|Undergrad students|Former members" | split: "|" %}
-{% assign team = site.data.team.members | default: empty %}
+{% assign team_list = site.data.team.members %}
+{% if team_list == nil %}
+  {% assign team_list = empty %}
+{% endif %}
 
 {% for r in role_order %}
-  {% assign members = team | where: "role", r | sort: "order" %}
-  {% if members and members.size > 0 %}
+  {% assign filtered = team_list | where: "role", r %}
+  {% if filtered and filtered.size > 0 %}
+    {% assign members = filtered | sort: "order" %}
 
 ## {{ r }}
 
@@ -37,6 +41,6 @@ lang_switch_label: PT
   {% endif %}
 {% endfor %}
 
-{% if team == empty %}
+{% if team_list == empty %}
 <p>Coming soon.</p>
 {% endif %}
