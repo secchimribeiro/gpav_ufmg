@@ -1,10 +1,9 @@
-# CMS config placeholder
 backend:
   name: github
   repo: secchimribeiro/gpav_ufmg
   branch: main
-  base_url: https://gpav-ufmg-cms-auth.netlify.app
-  auth_endpoint: auth
+  base_url: https://gpav-ufmg-cms-oauth.vercel.app
+  auth_endpoint: api/auth
 
 media_folder: "assets/images/uploads"
 public_folder: "/gpav_ufmg/assets/images/uploads"
