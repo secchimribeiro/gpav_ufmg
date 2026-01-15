@@ -3,7 +3,7 @@ backend:
   name: github
   repo: secchimribeiro/gpav_ufmg
   branch: main
-  base_url: https://gpav-ufmg.netlify.app
+  base_url: https://gpav-ufmg-cms-auth.netlify.app
   auth_endpoint: auth
 
 media_folder: "assets/images/uploads"
