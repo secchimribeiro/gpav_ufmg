@@ -34,3 +34,10 @@ a:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
 .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { display:block; }
 
 .site-footer { border-top:1px solid var(--line); margin-top:2rem; padding:1rem 0; color:var(--muted); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+.card { border: 1px solid var(--line); border-radius: 1rem; overflow: hidden; background: #fff; display: flex; flex-direction: column; }
+.card-photo { width: 100%; height: 220px; object-fit: cover; }
+.card-body { padding: 1rem; }
+.card-title { margin: 0; font-size: 1.05rem; }
+.card-subtitle { margin: .25rem 0 .75rem; color: var(--muted); }
