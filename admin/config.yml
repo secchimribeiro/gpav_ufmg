@@ -26,12 +26,6 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Team (PT)"
-        name: "team_pt"
-        file: "pt/team.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
       - label: "Publications (PT)"
         name: "pubs_pt"
         file: "pt/publications.md"
@@ -63,12 +57,6 @@ collections:
       - label: "About (EN)"
         name: "about_en"
         file: "en/about.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Team (EN)"
-        name: "team_en"
-        file: "en/team.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
