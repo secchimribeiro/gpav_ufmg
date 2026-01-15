@@ -85,18 +85,19 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "news_post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Cover image", name: "cover", widget: "image", required: false }
       - { label: "Attachments", name: "attachments", widget: "list", required: false, field: { label: "File", name: "file", widget: "file" } }
       - { label: "Body", name: "body", widget: "markdown" }
-
   - name: "news_en"
     label: "News (English)"
     folder: "en/news"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "news_post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Cover image", name: "cover", widget: "image", required: false }

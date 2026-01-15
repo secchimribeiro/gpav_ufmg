@@ -41,3 +41,14 @@ a:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
 .card-body { padding: 1rem; }
 .card-title { margin: 0; font-size: 1.05rem; }
 .card-subtitle { margin: .25rem 0 .75rem; color: var(--muted); }
+
+.news-list { list-style: none; padding: 0; margin: 1rem 0 2rem; display: grid; gap: 1rem; }
+.news-item { border: 1px solid var(--line); border-radius: 1rem; padding: 1rem; background: #fff; }
+.news-item-title { margin: 0; font-size: 1.05rem; }
+.news-item-meta { margin: .35rem 0 .75rem; color: var(--muted); }
+.news-thumb { width: 100%; max-height: 220px; object-fit: cover; border-radius: .75rem; border: 1px solid var(--line); }
+
+.news-post h1 { margin-top: 0; }
+.news-meta { color: var(--muted); margin-top: .25rem; }
+.news-cover { width: 100%; max-height: 360px; object-fit: cover; border-radius: 1rem; border: 1px solid var(--line); margin: 1rem 0; }
+.news-attachments ul { padding-left: 1.25rem; }
