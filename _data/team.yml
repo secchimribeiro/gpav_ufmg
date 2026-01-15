@@ -1,1 +1,9 @@
-members: []
+members:
+  - order: 1
+    name: Test Testerson
+    role: Project Manager
+    title: Title (Optional) field
+    bio_pt: Bio (PT) field
+    bio_en: Bio (EN) field
+    photo: https://media.istockphoto.com/id/816752606/photo/tv-test-card-or-test-pattern-generic.jpg?s=612x612&w=0&k=20&c=63Jcx_5bFnvBw9elRDLrLKjtDYXr70pKtUK0jXJ2_uY=
+    linkedin: www.linkedin.com/in/secchimribeiro
