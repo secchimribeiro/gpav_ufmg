@@ -2,7 +2,7 @@
 layout: news_post
 title: PT News Title 01
 date: 2026-01-16T14:59:00.000+01:00
-cover: https://media.istockphoto.com/id/1369150014/vector/breaking-news-with-world-map-background-vector.jpg?s=612x612&w=0&k=20&c=9pR2-nDBhb7cOvvZU_VdgkMmPJXrBQ4rB1AkTXxRIKM=
+cover: /gpav_ufmg/assets/images/uploads/banner4.jpg
 ---
 
 
