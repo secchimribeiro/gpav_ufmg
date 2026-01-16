@@ -30,8 +30,8 @@ lang_switch_label: PT
       <h3 class="card-title">{{ m.name }}</h3>
       {% if m.title %}<p class="card-subtitle">{{ m.title }}</p>{% endif %}
       <p>{{ m.bio_en }}</p>
-      {% if m.linkedin %}
-        <p><a href="{{ m.linkedin }}" aria-label="LinkedIn of {{ m.name }}">LinkedIn</a></p>
+      {% if m.lattes %}
+        <p><a href="{{ m.lattes }}" aria-label="CV Lattes of {{ m.name }}">Lattes</a></p>
       {% endif %}
     </div>
   </article>

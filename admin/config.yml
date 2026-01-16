@@ -121,5 +121,5 @@ collections:
               - { label: "Bio (PT)", name: "bio_pt", widget: "text" }
               - { label: "Bio (EN)", name: "bio_en", widget: "text" }
               - { label: "Photo", name: "photo", widget: "image", required: false }
-              - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+              - { label: "CV Lattes URL", name: "lattes", widget: "string", required: false }
               - { label: "Order within role (lower first)", name: "order", widget: "number", default: 1, value_type: "int", min: 1 }

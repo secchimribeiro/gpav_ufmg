@@ -339,3 +339,6 @@ main {
 .pub-card-title { margin: 0; font-size: 1rem; }
 .pub-card-meta { margin: .4rem 0 0; color: var(--muted); font-size: .9rem; }
 .pub-card-doi { margin: .5rem 0 0; font-size: .9rem; }
+
+#banner-frame { cursor: pointer; }
+#banner-frame.is-paused { outline: 2px dashed var(--line); outline-offset: -6px; }

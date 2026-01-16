@@ -1,16 +1,21 @@
 (() => {
   const img = document.getElementById("banner-img");
-  if (!img) return;
+  const frame = document.getElementById("banner-frame");
+  if (!img || !frame) return;
 
-  const base = img.src.replace(/banner1\.(jpg|png)$/i, "");
+  // Build slide list based on current src path
+  const src = img.getAttribute("src") || "";
+  const base = src.replace(/banner1\.(jpg|png)$/i, "");
   const slides = [
-    { src: base + "banner1.jpg", alt: "Arbovirus particle visualization" },
-    { src: base + "banner2.jpg", alt: "Mosquito and virus illustration" },
-    { src: base + "banner4.jpg", alt: "Mosquito concept image" },
+    { src: base + "banner1.jpg", alt: "Banner image 1" },
+    { src: base + "banner2.jpg", alt: "Banner image 2" },
+    { src: base + "banner3.png", alt: "Banner image 3" },
+    { src: base + "banner4.jpg", alt: "Banner image 4" },
   ];
 
   let i = 0;
   let playing = true;
+
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const setSlide = (idx) => {
@@ -20,23 +25,36 @@
   };
 
   const next = () => setSlide(i + 1);
-  const prev = () => setSlide(i - 1);
 
-  document.getElementById("banner-next")?.addEventListener("click", next);
-  document.getElementById("banner-prev")?.addEventListener("click", prev);
+  const updateAria = () => {
+    frame.setAttribute(
+      "aria-label",
+      playing ? "Pause slideshow" : "Play slideshow"
+    );
+    frame.classList.toggle("is-paused", !playing);
+  };
 
-  const toggleBtn = document.getElementById("banner-toggle");
-  const updateToggleLabel = () => { if (toggleBtn) toggleBtn.textContent = playing ? "Pause" : "Play"; };
+  // Toggle play/pause on click
+  const toggle = () => {
+    playing = !playing;
+    updateAria();
+  };
 
-  toggleBtn?.addEventListener("click", () => { playing = !playing; updateToggleLabel(); });
+  frame.addEventListener("click", toggle);
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowRight") next();
-    if (e.key === "ArrowLeft") prev();
+  // Keyboard access: Enter/Space toggles
+  frame.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggle();
+    }
   });
 
-  updateToggleLabel();
+  updateAria();
+
   if (!prefersReduced) {
-    setInterval(() => { if (playing) next(); }, 7000);
+    setInterval(() => {
+      if (playing) next();
+    }, 7000);
   }
 })();
