@@ -180,10 +180,41 @@ textarea { resize: vertical; min-height: 140px; }
   padding-bottom: 0;
 }
 
-/* Always keep content readable over the patterned background */
+/* === HARD OVERRIDES: keep structure readable over patterned background === */
+
+/* Page background stays patterned */
+body {
+  background-color: #f6f6f6;
+  background-image: url("../images/pattern_bg.png");
+  background-repeat: repeat;
+}
+
+/* Header / Nav / Footer must be solid (not transparent) */
+.site-header { background: #ffffff !important; }
+.site-nav    { background: #fafafa !important; }
+.site-footer { background: #ffffff !important; }
+
+/* Keep their inner wrappers transparent so the bar looks continuous */
+.site-header .container,
+.site-nav .container,
+.site-footer .container {
+  background: transparent !important;
+}
+
+/* Main content always readable */
 main {
   background: #ffffff;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Ensure nav stays horizontal */
+.site-nav ul.nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
