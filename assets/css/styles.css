@@ -254,3 +254,35 @@ main {
   padding: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
+
+/* === REMOVE LINE BETWEEN HEADER AND NAV === */
+
+/* No borders between header and nav */
+.site-header,
+.site-nav {
+  border: none !important;
+}
+
+/* Make header and nav containers visually continuous */
+.site-header .container {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+}
+
+.site-nav .container {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+}
+
+/* Ensure same background so no seam is visible */
+.site-header .container,
+.site-nav .container {
+  background: #ffffff !important;
+}
+
+/* Kill any accidental gap */
+.site-header + .site-nav {
+  margin-top: 0 !important;
+}
