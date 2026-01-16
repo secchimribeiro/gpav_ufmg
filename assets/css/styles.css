@@ -286,3 +286,37 @@ main {
 .site-header + .site-nav {
   margin-top: 0 !important;
 }
+
+/* === Header scale-up (logo + text) === */
+
+.site-header img {
+  transform: scale(1.5);
+  transform-origin: left center;
+}
+
+.site-header h1 {
+  font-size: 1.5em;
+}
+
+.site-header .site-subtitle,
+.site-header p {
+  font-size: 1.5em;
+}
+
+/* === Center navigation === */
+
+.site-nav .nav {
+  justify-content: center;
+  text-align: center;
+}
+
+/* === Center footer text === */
+
+.site-footer {
+  text-align: center;
+}
+
+.site-footer p {
+  margin-left: auto;
+  margin-right: auto;
+}
