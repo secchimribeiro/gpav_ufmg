@@ -22,7 +22,7 @@ a:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
 .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
 .skip-link:focus { left: 1rem; top: 1rem; width:auto; height:auto; padding:.5rem .75rem; background:#fff; border:1px solid var(--line); z-index:9999; }
 
-.site-header { border-bottom: 1px solid var(--line); }
+.site-header { background: #ffffff; border-bottom: 1px solid var(--line); }
 .header-top { padding: 1rem; }
 /*.header-top { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding: 1rem; flex-wrap: wrap; }*/
 .brand { display:flex; gap:1rem; align-items:center; text-decoration:none; color:inherit; }
@@ -40,8 +40,6 @@ a:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
 .banner-controls button { padding:.4rem .7rem; border:1px solid var(--line); border-radius:.5rem; background:#fff; cursor:pointer; }
 
 .site-nav {
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
   background: #fafafa;
 }
 .site-nav .container { padding-top: .75rem; padding-bottom: .75rem; }
@@ -61,7 +59,7 @@ a:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
 .dropdown { display:none; position:absolute; left:0; top:100%; background:#fff; border:1px solid var(--line); border-radius:.75rem; padding:.5rem; list-style:none; min-width: 180px; z-index: 1000; }
 .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { display:block; }
 
-.site-footer { border-top:1px solid var(--line); margin-top:2rem; padding:1rem 0; color:var(--muted); }
+.site-footer { background: #ffffff; }
 
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
 .card { border: 1px solid var(--line); border-radius: 1rem; overflow: hidden; background: #fff; display: flex; flex-direction: column; }
@@ -176,6 +174,16 @@ textarea { resize: vertical; min-height: 140px; }
 .site-header .container,
 .site-nav .container,
 .site-footer .container {
+  background: transparent;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Always keep content readable over the patterned background */
+main {
   background: #ffffff;
   border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
