@@ -1,12 +1,32 @@
 <header class="site-header">
   <div class="container">
     <div class="header-top">
-      <div class="site-title">
-        <h1>Grupo de Pesquisa em Arboviroses</h1>
-        <p class="site-subtitle">
-          Departamento de Morfologia · ICB · UFMG
-        </p>
+      <a class="brand" href="{{ site.baseurl }}/{{ page.lang_root }}/">
+        <img class="logo" src="{{ site.baseurl }}/assets/images/logo.jpg" alt="GPAV logo">
+        <div class="brand-text">
+          <div class="brand-title">{{ site.title }}</div>
+          <div class="brand-subtitle">Departmento de Morfologia · ICB · UFMG</div>
+        </div>
+      </a>
+
+      <div class="header-utils">
+        <a class="lang" href="{{ site.baseurl }}{{ page.lang_switch }}" aria-label="Switch language">
+          {{ page.lang_switch_label }}
+        </a>
+        <a class="icon" href="#" aria-label="LinkedIn (placeholder)">in</a>
+        <a class="icon" href="{{ site.baseurl }}/{{ page.lang_root }}/search/" aria-label="Search">⌕</a>
       </div>
     </div>
+
+    <section class="banner" aria-label="Featured images">
+      <div class="banner-frame">
+        <img id="banner-img" src="{{ site.baseurl }}/assets/images/banner/banner1.jpg" alt="" />
+      </div>
+      <div class="banner-controls">
+        <button type="button" id="banner-prev">Prev</button>
+        <button type="button" id="banner-toggle">Pause</button>
+        <button type="button" id="banner-next">Next</button>
+      </div>
+    </section>
   </div>
 </header>
