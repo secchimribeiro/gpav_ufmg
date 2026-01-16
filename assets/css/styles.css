@@ -218,3 +218,39 @@ main {
   padding: 0;
   align-items: center;
 }
+
+/* === Constrain header/nav/footer to body width === */
+
+/* Outer wrappers should be transparent */
+.site-header,
+.site-nav,
+.site-footer {
+  background: transparent !important;
+}
+
+/* The inner container becomes the visible bar (same width as main) */
+.site-header .container,
+.site-nav .container,
+.site-footer .container {
+  background: #ffffff !important;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Nav bar slightly different tone (optional, but matches previous look) */
+.site-nav .container {
+  background: #fafafa !important;
+}
+
+/* Ensure spacing looks consistent */
+.site-header .container { padding-top: 1rem; padding-bottom: 1rem; }
+.site-nav .container { padding-top: .75rem; padding-bottom: .75rem; }
+.site-footer .container { padding-top: 1rem; padding-bottom: 1rem; }
+
+/* Keep main consistent with same radius/shadow */
+main {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
