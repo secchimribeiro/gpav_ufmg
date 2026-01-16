@@ -6,7 +6,6 @@
   const slides = [
     { src: base + "banner1.jpg", alt: "Arbovirus particle visualization" },
     { src: base + "banner2.jpg", alt: "Mosquito and virus illustration" },
-    { src: base + "banner3.png", alt: "Aedes mosquito close-up" },
     { src: base + "banner4.jpg", alt: "Mosquito concept image" },
   ];
 

@@ -1,0 +1,21 @@
+<section class="recent-pubs" aria-labelledby="recent-pubs-title">
+  <h2 id="recent-pubs-title" class="section-title">
+    {% if include.lang_root == "pt" %}Publicações recentes{% else %}Recent publications{% endif %}
+  </h2>
+
+  <div id="recent-publications"
+       class="pub-cards"
+       data-lang="{{ include.lang_root | default: 'en' }}">
+    <p class="muted">
+      {% if include.lang_root == "pt" %}Carregando…{% else %}Loading…{% endif %}
+    </p>
+  </div>
+
+  <p class="muted">
+    <a href="{{ site.baseurl }}/{{ include.lang_root }}/publications/">
+      {% if include.lang_root == "pt" %}Ver todas as publicações{% else %}View all publications{% endif %}
+    </a>
+  </p>
+</section>
+
+<script src="{{ site.baseurl }}/assets/js/pubmed-recent-publications.js"></script>

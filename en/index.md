@@ -7,3 +7,4 @@ lang_switch_label: PT
 ---
 
 {% include latest_news.html lang_root="en" %}
+{% include recent_publications.html lang_root="en" %}
