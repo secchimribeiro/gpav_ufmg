@@ -1,24 +1,17 @@
 <!doctype html>
 <html lang="{{ page.lang_tag | default: 'pt-BR' }}">
-    {% if page.lang_root == "pt" %}
-      {% include header-pt.html %}
-      {% include nav-pt.html %}
-    {% else %}
-      {% include header-en.html %}
-      {% include nav-en.html %}
-    {% endif %}
+  {% include head.html %}
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="container">
-      <main id="main">
-        {{ content }}
-      </main>
-    </div>
+    {% include header.html %}
+    {% include nav.html %}
 
-    {% if page.lang_root == "pt" %}
-      {% include footer-pt.html %}
-    {% else %}
-      {% include footer-en.html %}
-    {% endif %}
+    <main id="main" class="container">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
     <script src="{{ site.baseurl }}/assets/js/site.js"></script>
   </body>
 </html>
