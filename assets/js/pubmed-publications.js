@@ -8,14 +8,17 @@
   // Author query: PubMed author field is "Lastname Initials".
   // We include common variants for the hyphenated surname and spacing.
   const TERM = [
-    // Vivian Vasconcelos Costa
-    '"Vasconcelos Costa VV"[Author]',
-    '"Vasconcelos Costa V"[Author]',
-    '"Costa VV"[Author]',
+    // Vivian Vasconcelos Costa: first OR last author
+    '"Vasconcelos Costa VV"[1au]',
+    '"Vasconcelos Costa VV"[lastau]',
+    '"Vasconcelos Costa V"[1au]',
+    '"Vasconcelos Costa V"[lastau]',
 
-    // Celso Martins Queiroz-Junior
-    '"Queiroz-Junior CM"[Author]',
-    '"Queiroz Junior CM"[Author]',
+    // Celso Martins Queiroz-Junior: first OR last author
+    '"Queiroz-Junior CM"[1au]',
+    '"Queiroz-Junior CM"[lastau]',
+    '"Queiroz Junior CM"[1au]',
+    '"Queiroz Junior CM"[lastau]'
   ].join(" OR ");
 
   // E-utilities base

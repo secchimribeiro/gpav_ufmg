@@ -25,7 +25,11 @@
         <article class="news-card">
           <a class="news-card-link" href="{{ site.baseurl }}{{ p.url }}">
             {% if p.cover %}
-              <img class="news-card-img" src="{{ site.baseurl }}{{ p.cover }}" alt="">
+              {% assign cover = p.cover %}
+              {% if cover contains site.baseurl %}
+                {% assign cover = cover | replace_first: site.baseurl, "" %}
+              {% endif %}
+              <img class="news-card-img" src="{{ site.baseurl }}{{ cover }}" alt="">
             {% else %}
               <div class="news-card-img placeholder" aria-hidden="true"></div>
             {% endif %}

@@ -6,7 +6,7 @@ backend:
   auth_endpoint: api/auth
 
 media_folder: "assets/images/uploads"
-public_folder: "/gpav_ufmg/assets/images/uploads"
+public_folder: "assets/images/uploads"
 
 publish_mode: simple
 

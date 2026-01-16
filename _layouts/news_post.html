@@ -12,7 +12,11 @@ layout: default
       </p>
     {% endif %}
     {% if page.cover %}
-      <img class="news-cover" src="{{ site.baseurl }}{{ page.cover }}" alt="">
+      {% assign cover = page.cover %}
+      {% if cover contains site.baseurl %}
+        {% assign cover = cover | replace_first: site.baseurl, "" %}
+      {% endif %}
+      <img class="news-cover" src="{{ site.baseurl }}{{ cover }}" alt="">
     {% endif %}
   </header>
 
