@@ -1,0 +1,48 @@
+{% assign lang_root = include.lang_root | default: "pt" %}
+{% assign news_path = lang_root | append: "/news/" %}
+
+{% assign posts = site.pages
+  | where_exp: "p", "p.path contains news_path"
+  | where_exp: "p", "p.name != 'index.md'"
+  | sort: "date"
+  | reverse
+%}
+
+{% assign latest = posts | slice: 0, 3 %}
+
+<section class="latest-news" aria-labelledby="latest-news-title">
+  <h2 id="latest-news-title" class="section-title">
+    {% if lang_root == "pt" %}Últimas notícias{% else %}Latest news{% endif %}
+  </h2>
+
+  {% if latest.size == 0 %}
+    <p class="muted">
+      {% if lang_root == "pt" %}Em breve.{% else %}Coming soon.{% endif %}
+    </p>
+  {% else %}
+    <div class="news-cards">
+      {% for p in latest %}
+        <article class="news-card">
+          <a class="news-card-link" href="{{ site.baseurl }}{{ p.url }}">
+            {% if p.cover %}
+              <img class="news-card-img" src="{{ site.baseurl }}{{ p.cover }}" alt="">
+            {% else %}
+              <div class="news-card-img placeholder" aria-hidden="true"></div>
+            {% endif %}
+
+            <div class="news-card-body">
+              <h3 class="news-card-title">{{ p.title }}</h3>
+              {% if p.date %}
+                <p class="news-card-meta">
+                  <time datetime="{{ p.date | date_to_xmlschema }}">
+                    {{ p.date | date: "%Y-%m-%d" }}
+                  </time>
+                </p>
+              {% endif %}
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
