@@ -618,11 +618,11 @@ main {
 
 /* Detached section cards (Home sections like Latest News / Recent publications) */
 .section-card {
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;       /* <= requested */
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;        /* <= requested */
+  margin-top: .5rem;
+  padding-top: .5rem;
   background: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  /*border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);*/
 }
 
 .section-card .section-title {
