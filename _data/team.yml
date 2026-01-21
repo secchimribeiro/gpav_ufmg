@@ -1,1 +1,26 @@
-members: []
+members:
+  - order: 1
+    name: Vivian Vasconcelos Costa
+    role: Group Leader
+    bio_pt: "Professora adjunta e pesquisadora na Universidade Federal de Minas
+      Gerais (UFMG) desde 2017. Possuo mestrado (2009) e doutorado (2013) com
+      especialização em Microbiologia, além de pós-doutorado (2013-2017) em
+      Doenças Infecciosas. Coordeno um grupo de pesquisa, o @GPAV.UFMG, que é
+      referência em estudos sobre arbovírus no Brasil, focado no desenvolvimento
+      de plataformas pré-clínicas para entender a patogênese viral e identificar
+      novas estratégias terapêuticas para reduzir o impacto dessas doenças.
+      Minha equipe se dedica a investigar os mecanismos que determinam a
+      gravidade e persistência das infecções virais, com ênfase na fase de
+      resolução da inflamação. "
+    bio_en: Adjunct Professor and researcher at the Federal University of Minas
+      Gerais (UFMG) since 2017. I hold a master's degree (2009) and a doctorate
+      (2013) specializing in Microbiology, as well as a postdoctoral degree
+      (2013-2017) in Infectious Diseases. I coordinate a research group,
+      @GPAV.UFMG, which is a reference in arbovirus studies in Brazil, focused
+      on the development of preclinical platforms to understand viral
+      pathogenesis and identify new therapeutic strategies to reduce the impact
+      of these diseases. My team is dedicated to investigating the mechanisms
+      that determine the severity and persistence of viral infections, with an
+      emphasis on the resolution phase of inflammation.
+    photo: assets/images/uploads/vivian.jpg
+    lattes: http://lattes.cnpq.br/6010924145549202
