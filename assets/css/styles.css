@@ -217,7 +217,7 @@ body {
 
 /* Main should NOT be a card: it must be transparent so sections don't connect */
 main {
-  background: transparent !important;
+  background: #ffffff  !important;
   padding: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
