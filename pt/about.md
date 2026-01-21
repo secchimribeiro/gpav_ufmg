@@ -1,3 +1,13 @@
+---
+layout: default
+title: Sobre o GPAV
+lang_root: pt
+lang_tag: pt-BR
+lang_switch: /en/about/
+lang_switch_label: EN
+permalink: /pt/about/
+---
+
 ## Missão
 
 Nossa missão é avançar o conhecimento sobre doenças arbovirais e virais emergentes, incluindo dengue, Zika, chikungunya e SARS-CoV-2, por meio do desenvolvimento de modelos experimentais robustos. Nosso foco está na criação e no refinamento de modelos animais que reproduzam fielmente a doença humana e as respostas imunes. Ao integrar virologia, imunologia e patologia, buscamos estabelecer plataformas pré-clínicas inovadoras para pesquisa translacional. Nosso trabalho apoia a avaliação da patogênese viral, das interações vírus–hospedeiro e de estratégias terapêuticas. Em última instância, buscamos acelerar o desenvolvimento de vacinas, antivirais e estratégias de intervenção eficazes. Temos um compromisso com o rigor científico, a colaboração e o impacto em saúde pública.
