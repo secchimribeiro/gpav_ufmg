@@ -627,3 +627,20 @@ main {
 .section-card .section-title {
   margin-top: 0;
 }
+
+/* === HOME ONLY: no connecting white background between section cards === */
+body.home main {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* HOME section cards: fully detached with max 0.5rem spacing */
+body.home .section-card {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
