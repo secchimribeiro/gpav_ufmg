@@ -10,10 +10,22 @@
       </a>
 
       <div class="header-utils">
-        <a class="lang" href="{{ site.baseurl }}{{ page.lang_switch }}" aria-label="Switch language">
-          {{ page.lang_switch_label }}
+        <a class="lang"
+          href="{{ site.baseurl }}{{ page.lang_switch }}"
+          aria-label="Switch language to Portuguese"
+          title="Português">
+          <svg class="flag-icon" viewBox="0 0 720 504" aria-hidden="true" focusable="false">
+            <!-- Green background -->
+            <rect width="720" height="504" fill="#009C3B"/>
+            <!-- Yellow diamond -->
+            <polygon points="360,72 648,252 360,432 72,252" fill="#FFDF00"/>
+            <!-- Blue globe -->
+            <circle cx="360" cy="252" r="120" fill="#002776"/>
+            <!-- White band (simplified) -->
+            <path d="M240 252a120 120 0 0 1 240 0"
+                  fill="none" stroke="#FFFFFF" stroke-width="20"/>
+          </svg>
         </a>
-        <a class="icon" href="#" aria-label="LinkedIn (placeholder)">in</a>
         <a class="icon" href="{{ site.baseurl }}/{{ page.lang_root }}/search/" aria-label="Search">⌕</a>
       </div>
     </div>

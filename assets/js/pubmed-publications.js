@@ -4,30 +4,12 @@
 
   // Configuration
   const PAGE_SIZE = 10;
-
-  // Author query: PubMed author field is "Lastname Initials".
-  // We include common variants for the hyphenated surname and spacing.
-  const TERM = [
-    // Vivian Vasconcelos Costa: first OR last author
-    '"Vasconcelos Costa VV"[1au]',
-    '"Vasconcelos Costa VV"[lastau]',
-    '"Vasconcelos Costa V"[1au]',
-    '"Vasconcelos Costa V"[lastau]',
-
-    // Celso Martins Queiroz-Junior: first OR last author
-    '"Queiroz-Junior CM"[1au]',
-    '"Queiroz-Junior CM"[lastau]',
-    '"Queiroz Junior CM"[1au]',
-    '"Queiroz Junior CM"[lastau]'
-  ].join(" OR ");
-
-  // E-utilities base
-  const EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
-  const DB = "pubmed";
-
-  // Identify the tool/email per NCBI best practice (no API key used here).
-  const TOOL = "gpav_ufmg_website";
-  const EMAIL = "secchimribeiro@gmail.com";
+  const CFG = window.GPAV_PUBMED;
+  const TERM = CFG.TERM;
+  const EUTILS = CFG.EUTILS;
+  const DB = CFG.DB;
+  const TOOL = CFG.TOOL;
+  const EMAIL = CFG.EMAIL;
 
   // Simple state
   const state = {

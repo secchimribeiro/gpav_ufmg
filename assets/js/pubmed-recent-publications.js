@@ -6,19 +6,12 @@
   const t = (pt, en) => (lang === "pt" ? pt : en);
 
   // Same author query as your Publications page (adjust later if needed)
-  const TERM = [
-    '"Vasconcelos Costa VV"[Author]',
-    '"Vasconcelos Costa V"[Author]',
-    '"Costa VV"[Author]',
-    '"Queiroz-Junior CM"[Author]',
-    '"Queiroz Junior CM"[Author]',
-  ].join(" OR ");
-
-  const EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
-  const DB = "pubmed";
-
-  const TOOL = "gpav_ufmg_website";
-  const EMAIL = "secchimribeiro@gmail.com";
+  const CFG = window.GPAV_PUBMED;
+  const TERM = CFG.TERM;
+  const EUTILS = CFG.EUTILS;
+  const DB = CFG.DB;
+  const TOOL = CFG.TOOL;
+  const EMAIL = CFG.EMAIL;
 
   const esc = (s) =>
     String(s ?? "")
