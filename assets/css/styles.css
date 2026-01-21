@@ -218,11 +218,10 @@ body {
 /* Main should NOT be a card: it must be transparent so sections don't connect */
 main {
   background: #ffffff  !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
+  padding: 1rem; 
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
-
 /* Ensure nav stays horizontal */
 .site-nav ul.nav {
   list-style: none;
