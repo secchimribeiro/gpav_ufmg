@@ -1,0 +1,139 @@
+backend:
+  name: github
+  repo: secchimribeiro/gpav_ufmg
+  branch: main
+  base_url: https://gpav-ufmg-cms-oauth.vercel.app
+  auth_endpoint: api/auth
+
+media_folder: "assets/images/uploads"
+public_folder: "assets/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "pages_pt"
+    label: "Pages (Português)"
+    files:
+      - label: "Home (PT)"
+        name: "home_pt"
+        file: "pt/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "About (PT)"
+        name: "about_pt"
+        file: "pt/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Publications (PT)"
+        name: "pubs_pt"
+        file: "pt/publications.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact (PT)"
+        name: "contact_pt"
+        file: "pt/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Privacy (PT)"
+        name: "privacy_pt"
+        file: "pt/privacy.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Collaborators (PT)"
+        name: "collaborators_pt"
+        file: "pt/collaborators.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages_en"
+    label: "Pages (English)"
+    files:
+      - label: "Home (EN)"
+        name: "home_en"
+        file: "en/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "About (EN)"
+        name: "about_en"
+        file: "en/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Publications (EN)"
+        name: "pubs_en"
+        file: "en/publications.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact (EN)"
+        name: "contact_en"
+        file: "en/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Privacy (EN)"
+        name: "privacy_en"
+        file: "en/privacy.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Collaborators (EN)"
+        name: "collaborators_en"
+        file: "en/collaborators.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
+  - name: "news_pt"
+    label: "News (Português)"
+    folder: "pt/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "news_post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Attachments", name: "attachments", widget: "list", required: false, field: { label: "File", name: "file", widget: "file" } }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "news_en"
+    label: "News (English)"
+    folder: "en/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "news_post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Attachments", name: "attachments", widget: "list", required: false, field: { label: "File", name: "file", widget: "file" } }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "team"
+    label: "Team"
+    files:
+      - label: "Team members"
+        name: "team_members"
+        file: "_data/team.yml"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role category", name: "role", widget: "select", options: ["Group Leader", "Project Manager", "Postdocs", "PhD students", "Master Students", "Undergrad students", "Former members"] }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Bio (PT)", name: "bio_pt", widget: "text" }
+              - { label: "Bio (EN)", name: "bio_en", widget: "text" }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - { label: "CV Lattes URL", name: "lattes", widget: "string", required: false }
+              - { label: "Order within role (lower first)", name: "order", widget: "number", default: 1, value_type: "int", min: 1 }
+

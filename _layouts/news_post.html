@@ -12,11 +12,22 @@ layout: default
       </p>
     {% endif %}
     {% if page.cover %}
-      {% assign cover = page.cover %}
-      {% if cover contains site.baseurl %}
-        {% assign cover = cover | replace_first: site.baseurl, "" %}
+      {% assign cover = page.cover | strip %}
+
+      {% if cover contains "://" %}
+        {% assign cover_url = cover %}
+      {% else %}
+        {% assign first = cover | slice: 0, 1 %}
+        {% if first != "/" %}
+          {% assign cover = "/" | append: cover %}
+        {% endif %}
+        {% if cover contains site.baseurl %}
+          {% assign cover = cover | replace_first: site.baseurl, "" %}
+        {% endif %}
+        {% assign cover_url = cover | relative_url %}
       {% endif %}
-      <img class="news-cover" src="{{ site.baseurl }}{{ cover }}" alt="">
+
+      <img class="news-cover" src="{{ cover_url }}" alt="">
     {% endif %}
   </header>
 

@@ -2,7 +2,7 @@
 layout: news_post
 title: PT News Title 03
 date: 2026-01-16T15:03:00.000+01:00
-cover: https://cdn.pixabay.com/photo/2017/06/26/19/03/news-2444778_1280.jpg
+cover: /gpav_ufmg/assets/images/uploads/banner1.jpg
 ---
 
 

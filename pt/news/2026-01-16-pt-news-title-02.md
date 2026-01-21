@@ -2,7 +2,7 @@
 layout: news_post
 title: PT News Title 02
 date: 2026-01-16T15:01:00.000+01:00
-cover: https://img.freepik.com/free-vector/global-breaking-news-alert-graphic_1308-180362.jpg?semt=ais_hybrid&w=740&q=80
+cover: /gpav_ufmg/assets/images/uploads/banner2.jpg
 ---
 
 

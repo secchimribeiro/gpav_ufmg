@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Notícias
+title: Novidades
 lang_root: pt
 lang_tag: pt-BR
 lang_switch: /en/news/
@@ -8,7 +8,7 @@ lang_switch_label: EN
 permalink: /pt/news/
 ---
 
-# Notícias
+# Novidades
 
 {% assign posts = site.pages
   | where_exp: "p", "p.path contains 'pt/news/'"
@@ -34,10 +34,15 @@ permalink: /pt/news/
     {% endif %}
     {% if p.cover %}
       {% assign cover = p.cover | strip %}
-      {% if cover | slice: 0, 1 != "/" %}{% assign cover = "/" | append: cover %}{% endif %}
-      {% if cover contains site.baseurl %}{% assign cover = cover | replace_first: site.baseurl, "" %}{% endif %}
+      {% assign first = cover | slice: 0, 1 %}
+      {% if first != "/" %}
+        {% assign cover = "/" | append: cover %}
+      {% endif %}
+      {% if cover contains site.baseurl %}
+        {% assign cover = cover | replace_first: site.baseurl, "" %}
+      {% endif %}
       <a href="{{ site.baseurl }}{{ p.url }}">
-        <img class="news-thumb" src="{{ site.baseurl }}{{ cover }}" alt="">
+        <img class="news-thumb" src="{{ cover | relative_url }}" alt="">
       </a>
     {% endif %}
   </li>

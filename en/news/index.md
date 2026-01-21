@@ -34,7 +34,10 @@ permalink: /en/news/
     {% endif %}
     {% if p.cover %}
       {% assign cover = p.cover | strip %}
-      {% if cover | slice: 0, 1 != "/" %}{% assign cover = "/" | append: cover %}{% endif %}
+      {% assign first = cover | slice: 0, 1 %}
+      {% if first != "/" %}
+        {% assign cover = "/" | append: cover %}
+      {% endif %}
       {% if cover contains site.baseurl %}{% assign cover = cover | replace_first: site.baseurl, "" %}{% endif %}
       <a href="{{ site.baseurl }}{{ p.url }}">
         <img class="news-thumb" src="{{ site.baseurl }}{{ cover }}" alt="">
