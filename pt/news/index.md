@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Novidades
+title: Notícias
 lang_root: pt
 lang_tag: pt-BR
 lang_switch: /en/news/
@@ -8,7 +8,7 @@ lang_switch_label: EN
 permalink: /pt/news/
 ---
 
-# Novidades
+# Notícias
 
 {% assign posts = site.pages
   | where_exp: "p", "p.path contains 'pt/news/'"
