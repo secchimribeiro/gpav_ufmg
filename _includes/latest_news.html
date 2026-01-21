@@ -25,15 +25,23 @@
         <article class="news-card">
           <a class="news-card-link" href="{{ site.baseurl }}{{ p.url }}">
             {% if p.cover %}
-              {% assign cover = p.cover %}
+              {% assign cover = p.cover | strip %}
+
+              {%- comment -%} Ensure leading slash {%- endcomment -%}
+              {% assign first = cover | slice: 0, 1 %}
+              {% if first != "/" %}
+                {% assign cover = "/" | append: cover %}
+              {% endif %}
+
+              {%- comment -%} Prevent double baseurl like /gpav_ufmg/gpav_ufmg/... {%- endcomment -%}
               {% if cover contains site.baseurl %}
                 {% assign cover = cover | replace_first: site.baseurl, "" %}
               {% endif %}
-              <img class="news-card-img" src="{{ site.baseurl }}{{ cover }}" alt="">
-            {% else %}
-              <div class="news-card-img placeholder" aria-hidden="true"></div>
-            {% endif %}
 
+              <a href="{{ site.baseurl }}{{ p.url }}">
+                <img class="news-card-img" src="{{ cover | relative_url }}" alt="">
+              </a>
+            {% endif %}
             <div class="news-card-body">
               <h3 class="news-card-title">{{ p.title }}</h3>
               {% if p.date %}

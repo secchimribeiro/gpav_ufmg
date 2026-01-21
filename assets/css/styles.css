@@ -531,3 +531,8 @@ main {
   background: #f5f5f5;
   outline: none;
 }
+
+/* Extra spacing between Team and Collaborators in About submenu */
+.submenu li:nth-child(3) {
+  margin-top: 0.75rem; /* doubles spacing visually */
+}

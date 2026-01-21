@@ -20,6 +20,8 @@ layout: default
       {% if cover contains site.baseurl %}
         {% assign cover = cover | replace_first: site.baseurl, "" %}
       {% endif %}
+      <img class="news-cover" src="{{ cover | relative_url }}" alt="">
+    {% endif %}
       <img class="news-cover" src="{{ site.baseurl }}{{ cover }}" alt="">
     {% endif %}
   </header>
