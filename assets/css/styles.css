@@ -625,11 +625,38 @@ main {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
+
+
 .section-card .section-title {
   margin-top: 0;
 }
 
 /* === HOME ONLY: no connecting white background between section cards === */
+body.home main {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* HOME section cards: fully detached with max 0.5rem spacing */
+body.home .section-card {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* === DEFAULT (non-home): keep pages readable with a white content surface === */
+main {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* === HOME ONLY: remove main surface so section cards are fully detached === */
 body.home main {
   background: transparent;
   padding: 0;
