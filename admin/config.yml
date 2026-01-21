@@ -44,6 +44,12 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Collaborators (PT)"
+        name: "collaborators_pt"
+        file: "pt/collaborators.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages_en"
     label: "Pages (English)"
@@ -78,6 +84,13 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Collaborators (EN)"
+        name: "collaborators_en"
+        file: "en/collaborators.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
 
   - name: "news_pt"
     label: "News (Português)"
@@ -123,3 +136,4 @@ collections:
               - { label: "Photo", name: "photo", widget: "image", required: false }
               - { label: "CV Lattes URL", name: "lattes", widget: "string", required: false }
               - { label: "Order within role (lower first)", name: "order", widget: "number", default: 1, value_type: "int", min: 1 }
+

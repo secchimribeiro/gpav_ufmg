@@ -14,16 +14,38 @@
           href="{{ site.baseurl }}{{ page.lang_switch }}"
           aria-label="Switch language to English"
           title="English">
-          <svg class="flag-icon" viewBox="0 0 60 30" aria-hidden="true" focusable="false">
-            <rect width="60" height="30" fill="#012169"/>
-            <polygon points="0,0 25,0 60,15 60,30 35,30 0,15" fill="#FFF"/>
-            <polygon points="60,0 35,0 0,15 0,30 25,30 60,15" fill="#FFF"/>
-            <polygon points="0,0 27,0 60,14 60,18 33,18 0,4" fill="#C8102E"/>
-            <polygon points="60,0 33,0 0,14 0,18 27,18 60,4" fill="#C8102E"/>
-            <rect x="25" width="10" height="30" fill="#FFF"/>
-            <rect y="10" width="60" height="10" fill="#FFF"/>
-            <rect x="27" width="6" height="30" fill="#C8102E"/>
-            <rect y="12" width="60" height="6" fill="#C8102E"/>
+          <svg class="flag-icon" viewBox="0 0 7410 3900" aria-hidden="true" focusable="false">
+            <!-- Red background -->
+            <rect width="7410" height="3900" fill="#B22234"/>
+
+            <!-- White stripes -->
+            <g fill="#FFFFFF">
+              <rect y="300" width="7410" height="300"/>
+              <rect y="900" width="7410" height="300"/>
+              <rect y="1500" width="7410" height="300"/>
+              <rect y="2100" width="7410" height="300"/>
+              <rect y="2700" width="7410" height="300"/>
+              <rect y="3300" width="7410" height="300"/>
+            </g>
+
+            <!-- Blue canton -->
+            <rect width="2964" height="2100" fill="#3C3B6E"/>
+
+            <!-- Stars (simplified grid, readable at small size) -->
+            <g fill="#FFFFFF">
+              {% comment %} simplified stars {% endcomment %}
+              <circle cx="247" cy="210" r="70"/>
+              <circle cx="741" cy="210" r="70"/>
+              <circle cx="1235" cy="210" r="70"/>
+              <circle cx="1729" cy="210" r="70"/>
+              <circle cx="2223" cy="210" r="70"/>
+
+              <circle cx="494" cy="420" r="70"/>
+              <circle cx="988" cy="420" r="70"/>
+              <circle cx="1482" cy="420" r="70"/>
+              <circle cx="1976" cy="420" r="70"/>
+              <circle cx="2470" cy="420" r="70"/>
+            </g>
           </svg>
         </a>
         <a class="icon" href="{{ site.baseurl }}/{{ page.lang_root }}/search/" aria-label="Search">⌕</a>
