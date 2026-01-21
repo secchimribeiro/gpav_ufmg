@@ -42,3 +42,28 @@ members:
     photo: assets/images/uploads/scientist_model.png
     bio_pt: Biografia (PT)
     bio_en: Biography (EN)
+  - order: 2
+    name: Jenniffer Ramos Martins
+    role: PhD students
+    bio_en: Bachelor's degree in Biological Sciences from the State University of
+      Minas Gerais - UEMG (2022). Master's degree in Sciences with emphasis in
+      Cell Biology from the Federal University of Minas Gerais - UFMG
+      (2022-2023) and currently pursuing a PhD in Biochemistry and Immunology,
+      also at the Federal University of Minas Gerais - UFMG. Has experience in
+      the areas of Cell Biology, with emphasis on Cellular Immunology, Virology,
+      Microorganism-Host Interaction, and Biology of Inflammatory Processes. Has
+      been working on research into the immunopathology of dengue virus
+      infection, including the development and repositioning of drugs for viral
+      diseases in the Immunopharmacology laboratory.
+    bio_pt: Graduação (Licenciatura) em Ciências Biológicas pela Universidade do
+      Estado de Minas Gerais - UEMG (2022). Mestrado em Ciências com ênfase em
+      Biologia Celular pela Universidade Federal de Minas Gerais - UFMG
+      (2022-2023) e Doutorado em andamento em Bioquímica e Imunologia também
+      pela Universidade Federal de Minas Gerais UFMG. Possui experiência nas
+      áreas de Biologia Celular, com ênfase em Imunologia Celular, Virologia,
+      Interação Microrganismo-hospedeiro e Biologia dos Processos Inflamatórios.
+      Vem atuando na pesquisa da imunopatologia da infecção pelos vírus da
+      dengue com o desenvolvimento e reposicionamento de fármacos para doenças
+      virais no laboratório de Imunofarmacologia.
+    photo: assets/images/uploads/scientist_model.png
+    lattes: http://lattes.cnpq.br/1743707752012613
