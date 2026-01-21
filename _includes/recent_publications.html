@@ -1,8 +1,8 @@
-<section class="recent-pubs" aria-labelledby="recent-pubs-title">
+<section class="section-card" aria-labelledby="recent-pubs-title">
   <h2 id="recent-pubs-title" class="section-title">
     {% if include.lang_root == "pt" %}Publicações recentes{% else %}Recent publications{% endif %}
   </h2>
-
+  
   <div id="recent-publications"
        class="pub-cards"
        data-lang="{{ include.lang_root | default: 'en' }}">

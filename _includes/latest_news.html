@@ -10,11 +10,11 @@
 
 {% assign latest = posts | slice: 0, 3 %}
 
-<section class="latest-news" aria-labelledby="latest-news-title">
+<section class="section-card" aria-labelledby="latest-news-title">
   <h2 id="latest-news-title" class="section-title">
-    {% if lang_root == "pt" %}Últimas notícias{% else %}Latest news{% endif %}
+    {% if include.lang_root == "pt" %}Últimas notícias{% else %}Latest News{% endif %}
   </h2>
-
+  
   {% if latest.size == 0 %}
     <p class="muted">
       {% if lang_root == "pt" %}Em breve.{% else %}Coming soon.{% endif %}

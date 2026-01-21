@@ -614,3 +614,16 @@ main {
 
 .instagram-feed { margin-top: 2rem; }
 .instagram-feed iframe { width: 100%; border: 0; }
+
+/* Detached section cards (Home sections like Latest News / Recent publications) */
+.section-card {
+  margin-top: 2rem;                 /* detaches from previous content */
+  padding: 1.25rem 1.25rem 1rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.section-card .section-title {
+  margin-top: 0;
+}
