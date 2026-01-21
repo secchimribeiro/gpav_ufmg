@@ -217,7 +217,8 @@ body {
 
 /* Main should NOT be a card: it must be transparent so sections don't connect */
 main {
-  background: #ffffff  !important;
+  background: #ffffff;
+  margin-top: 0.5rem;
   padding: 1rem; 
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
@@ -263,6 +264,7 @@ main {
 /* Keep main consistent with same radius/shadow */
 main {
   background: #ffffff;
+  margin-top: 0.5rem;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
