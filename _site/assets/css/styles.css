@@ -49,6 +49,12 @@ a:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
 .site-nav {
   background: #fafafa;
 }
+
+/* Increase navigation text size by 50% */
+.site-nav a {
+  font-size: 1.25em;
+}
+
 .site-nav .container { padding-top: .75rem; padding-bottom: .75rem; }
 .nav {
   list-style: none;
@@ -60,7 +66,7 @@ a:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
 }
 .nav li { margin: 0; padding: 0; }
 .nav a { text-decoration:none; color:inherit; padding:.25rem .35rem; border-radius:.35rem; }
-.nav a:hover { background:#eee; }
+.nav a:hover { background:#b0d4b5; }
 
 .has-dropdown { position:relative; }
 .dropdown { display:none; position:absolute; left:0; top:100%; background:#fff; border:1px solid var(--line); border-radius:.75rem; padding:.5rem; list-style:none; min-width: 180px; z-index: 1000; }
@@ -599,3 +605,9 @@ main {
   text-decoration: underline;
 }
 
+/* Detach footer from main content */
+.site-footer {
+  margin-top: .5rem;       /* space from body */
+  padding-top: .5rem;
+  background: #f8f9fa;
+}
