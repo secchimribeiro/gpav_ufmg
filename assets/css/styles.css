@@ -618,9 +618,8 @@ main {
 
 /* Detached section cards (Home sections like Latest News / Recent publications) */
 .section-card {
-  margin: .75rem .75rem 0 0;
-  padding: .75rem .75rem 0 0;
-  background: #ffffff;
+  margin-top: 2rem;                 /* detaches from previous content */
+  padding: 1.25rem 1.25rem 1rem;  background: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
