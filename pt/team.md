@@ -24,7 +24,23 @@ lang_switch_label: EN
 {% for m in members %}
   <article class="card">
     {% if m.photo %}
-      <img class="card-photo" src="{{ site.baseurl }}{{ m.photo }}" alt="Foto de {{ m.name }}">
+      {% assign photo = m.photo | strip %}
+      {% assign first = photo | slice: 0, 1 %}
+      {% if first != "/" %}
+        {% assign photo = "/" | append: photo %}
+      {% endif %}
+      {% if photo contains site.baseurl %}
+        {% assign photo = photo | replace_first: site.baseurl, "" %}
+      {% endif %}
+      {% assign photo = m.photo | strip %}
+        {% assign first = photo | slice: 0, 1 %}
+        {% if first != "/" %}
+          {% assign photo = "/" | append: photo %}
+        {% endif %}
+        {% if photo contains site.baseurl %}
+          {% assign photo = photo | replace_first: site.baseurl, "" %}
+        {% endif %}
+        <img class="card-photo" src="{{ site.baseurl }}{{ photo }}" alt="">
     {% endif %}
     <div class="card-body">
       <h3 class="card-title">{{ m.name }}</h3>

@@ -342,3 +342,114 @@ main {
 
 #banner-frame { cursor: pointer; }
 #banner-frame.is-paused { outline: 2px dashed var(--line); outline-offset: -6px; }
+
+/* === TEAM: one card per row + image left (20%) === */
+.cards { 
+  display: grid;
+  grid-template-columns: 1fr;  /* one card per row */
+  gap: 1rem;
+}
+
+.cards .card {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Force the positions (prevents accidental swapping) */
+.cards .card-photo { grid-column: 1; grid-row: 1; }
+.cards .card-body  { grid-column: 2; grid-row: 1; }
+
+.cards .card-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;  /* square */
+  object-fit: cover;
+  border-radius: 0.75rem;
+  border: 1px solid var(--line);
+}
+
+/* If no photo, let text take full width */
+.cards .card:not(:has(.card-photo)) {
+  grid-template-columns: 1fr;
+}
+.cards .card:not(:has(.card-photo)) .card-body {
+  grid-column: 1;
+}
+
+/* Mobile: stack */
+@media (max-width: 650px) {
+  .cards .card {
+    grid-template-columns: 1fr;
+  }
+  .cards .card-photo,
+  .cards .card-body {
+    grid-column: 1;
+  }
+  .cards .card-photo {
+    max-width: 240px;
+  }
+}
+
+/* Team: one card per row; photo left (20%), text right */
+.cards { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.cards .card { display: grid; grid-template-columns: 20% 1fr; gap: 1rem; align-items: start; }
+.cards .card-photo { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: .75rem; border: 1px solid var(--line); }
+.cards .card-body { padding: 0; }
+
+@media (max-width: 650px) {
+  .cards .card { grid-template-columns: 1fr; }
+  .cards .card-photo { max-width: 240px; }
+}
+
+/* Header: brand left, utils right */
+.header-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Let the brand take remaining space if needed */
+.header-top .brand{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Keep brand text from forcing wrapping weirdly */
+.brand-text{ min-width: 0; }
+.brand-title, .brand-subtitle{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Right-side utilities */
+.header-utils{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+/* Mobile: stack utils below brand */
+@media (max-width: 700px){
+  .header-top{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header-utils{
+    justify-content: center;
+    width: 100%;
+  }
+  .brand-title, .brand-subtitle{
+    white-space: normal;
+    text-overflow: clip;
+  }
+}
