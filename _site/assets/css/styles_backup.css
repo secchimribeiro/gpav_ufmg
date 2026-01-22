@@ -667,27 +667,8 @@ body.home main {
 /* HOME section cards: fully detached with max 0.5rem spacing */
 body.home .section-card {
   margin: 0.5rem 0;
-  padding: 1rem;
+  padding: 0.5rem;
   background: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-}
-
-/* Non-home pages: force the main content "card" to be white and readable */
-body:not(.home) main {
-  background: #fff !important;
-  color: inherit;
-}
-
-/* If your main card uses padding/radius/shadow and those were accidentally removed,
-   restore them here. Comment out any lines you don't want. */
-body:not(.home) main {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,.06);
-}
-
-body:not(.home) .container {
-  background: #fff !important;
 }

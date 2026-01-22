@@ -1,12 +1,13 @@
 ---
 layout: news_post
-title: PT News Title 03
-date: 2026-01-16T15:03:00.000+01:00
-cover: /gpav_ufmg/assets/images/uploads/banner1.jpg
+title: Prof. Vivian vence prêmio internacional com pesquisa sobre vírus
+date: 2026-01-20T15:03:00.000+01:00
+cover: /gpav_ufmg/assets/images/uploads/Brazil_Conf_Vencedores.png
 ---
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio odio, dapibus non dictum eget, vehicula nec mi. Aliquam volutpat aliquam bibendum. Praesent ut efficitur lacus. Pellentesque a metus luctus, dictum est porta, accumsan ligula. Suspendisse feugiat sit amet mi sit amet mollis. In iaculis, risus in scelerisque dictum, risus tortor sagittis libero, vitae scelerisque lacus nisl at augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras efficitur consequat rutrum. Nam sed augue eu eros dapibus sollicitudin. Phasellus egestas, justo in commodo varius, quam massa condimentum mi, non vulputate diam ipsum in nisi. Quisque consequat, purus non volutpat tincidunt, felis nibh viverra velit, sit amet congue libero est sed metus.
+A Prof. Dr. Vivian Vasconcelos Costa, líder do GPAV-UFMG, foi ganhadora do prêmio de pesquisadores realizado pela Brazil Conference.
 
-In vel lectus tristique, ultrices nisl et, fermentum felis. Nullam elementum ultrices metus, quis aliquam sapien placerat a. Quisque feugiat rhoncus dui eu hendrerit. Morbi dui nisl, porttitor et pellentesque vitae, placerat ac ligula. Nullam consectetur libero ut nisi rhoncus pharetra. Morbi in finibus metus. Duis quis ante convallis orci rhoncus efficitur sed eu ipsum. Ut aliquam magna sit amet elementum molestie. Integer nibh elit, accumsan quis lacus et, eleifend facilisis libero. Suspendisse non nulla non nisl aliquam mattis ac in erat. Aenean bibendum, libero at dapibus posuere, metus sapien ultricies sem, sed malesuada nulla justo eu eros. Proin purus lorem, euismod sit amet enim at, rhoncus sodales mauris.
+A Brazil Conference é a maior conferência que discute o Brasil fora do país, reunindo estudantes, pesquisadores, lideranças e profissionais para debater os grandes desafios e as oportunidades do Brasil. Em 2026, a conferência chega à sua 12ª edição, acontecendo nos campi de Harvard e MIT, com o tema:“O Futuro do Brasil: Transformando Desafios em Progresso”. Um espaço de diálogo, ideias e construção coletiva para um Brasil mais justo, inovador e inclusivo.
+

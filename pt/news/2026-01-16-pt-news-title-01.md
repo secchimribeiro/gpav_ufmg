@@ -1,12 +1,10 @@
 ---
 layout: news_post
-title: PT News Title 01
-date: 2026-01-16T14:59:00.000+01:00
-cover: /gpav_ufmg/assets/images/uploads/banner4.jpg
+title: GPAV-UFMG se torna parte da Global Virus Network (GVN)
+date: 2025-10-27T14:59:00.000+01:00
+cover: /gpav_ufmg/assets/images/uploads/Global_Virus_Network_cover.png
 ---
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio odio, dapibus non dictum eget, vehicula nec mi. Aliquam volutpat aliquam bibendum. Praesent ut efficitur lacus. Pellentesque a metus luctus, dictum est porta, accumsan ligula. Suspendisse feugiat sit amet mi sit amet mollis. In iaculis, risus in scelerisque dictum, risus tortor sagittis libero, vitae scelerisque lacus nisl at augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras efficitur consequat rutrum. Nam sed augue eu eros dapibus sollicitudin. Phasellus egestas, justo in commodo varius, quam massa condimentum mi, non vulputate diam ipsum in nisi. Quisque consequat, purus non volutpat tincidunt, felis nibh viverra velit, sit amet congue libero est sed metus.
-
-In vel lectus tristique, ultrices nisl et, fermentum felis. Nullam elementum ultrices metus, quis aliquam sapien placerat a. Quisque feugiat rhoncus dui eu hendrerit. Morbi dui nisl, porttitor et pellentesque vitae, placerat ac ligula. Nullam consectetur libero ut nisi rhoncus pharetra. Morbi in finibus metus. Duis quis ante convallis orci rhoncus efficitur sed eu ipsum. Ut aliquam magna sit amet elementum molestie. Integer nibh elit, accumsan quis lacus et, eleifend facilisis libero. Suspendisse non nulla non nisl aliquam mattis ac in erat. Aenean bibendum, libero at dapibus posuere, metus sapien ultricies sem, sed malesuada nulla justo eu eros. Proin purus lorem, euismod sit amet enim at, rhoncus sodales mauris.
+Esta semana, o GPAV-UFMG foi confirmado como membro da Global Virus Network (GVN), um consórcio internacional de centros de virologia composto por importantes laboratórios acadêmicos e de saúde pública dedicados ao estudo de patógenos virais emergentes, reemergentes e negligenciados. Ela funciona como uma infraestrutura científica distribuída que integra virologia básica, translacional e clínica para aprimorar a preparação e a resposta global a ameaças virais. A rede enfatiza a vigilância genômica, a patogênese viral, a imunologia e o desenvolvimento de antivirais e vacinas em diversas regiões geográficas. A GVN também serve como plataforma para o compartilhamento rápido de dados, consultoria especializada e orientação baseada em evidências para governos e organizações globais de saúde durante surtos. Uma missão central da organização é o desenvolvimento de capacidades por meio de treinamento avançado, transferência de tecnologia e mentoria de cientistas em início de carreira em países de baixa e média renda. Por meio de pesquisa coordenada e multidisciplinar e engajamento político, a GVN visa mitigar o impacto global das doenças virais e fortalecer a biossegurança internacional.
