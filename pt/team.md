@@ -5,6 +5,7 @@ lang_root: pt
 lang_tag: pt-BR
 lang_switch: /en/team/
 lang_switch_label: EN
+permalink: /pt/team/
 ---
 
 {% assign role_order = "Group Leader|Project Manager|Postdocs|PhD students|Master Students|Undergrad students|Former members" | split: "|" %}
