@@ -53,7 +53,7 @@ add_filter('the_content', function ($content) {
     }
     return $content;
 }, 0);
-function gpav_roles() { return ['Group Leader','Project Manager','Postdocs','PhD students','Master Students','Undergrad students','Former members']; }
+function gpav_roles() { return ['Group Leader','Project Manager','Postdocs','PhD students','Master Students','Undergrad students','Technicians','Former members']; }
 add_action('add_meta_boxes', function () {
     foreach (['page','gpav_news'] as $type) add_meta_box('gpav-language', 'GPAV: idioma e tradução / Language and translation', 'gpav_language_box', $type, 'side');
     add_meta_box('gpav-member', 'GPAV: perfil / Profile', 'gpav_member_box', 'gpav_member', 'normal');
@@ -167,6 +167,8 @@ add_shortcode('gpav_news_list',function(){
 });
 add_shortcode('gpav_team',function(){
     $members=get_posts(['post_type'=>'gpav_member','post_status'=>'publish','numberposts'=>-1,'meta_key'=>'_gpav_order','orderby'=>'meta_value_num','order'=>'ASC']);
+    // ordem alfabética pelo nome (ignora acentos e maiúsculas); membro novo já entra no lugar certo
+    usort($members,function($x,$y){return strcmp(strtolower(remove_accents($x->post_title)),strtolower(remove_accents($y->post_title)));});
     $lang=gpav_content_lang();ob_start();
     foreach(gpav_roles() as $role){
         $group=array_filter($members,function($m)use($role){return get_post_meta($m->ID,'_gpav_role',true)===$role;});
